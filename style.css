@@ -60,15 +60,21 @@ body.dark-mode::before {
   background: rgba(0, 0, 0, 0.4);
 }
 
-  .navbar {
-   background: #e3e0e400;
-  
+  /*================= NAVBAR FIXED ================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;  /* change to your navbar background color */
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
-  }
 /* Logo */
 .logo img {
   height: 50px;
