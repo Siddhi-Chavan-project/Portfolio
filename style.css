@@ -92,7 +92,8 @@ body.dark-mode::before {
   
    font-family: 'Arial', sans-serif;
    font-weight: 900;}
-
+.dark-mode .logo-name {
+ color: rgb(255, 255, 255);}
   #toggleMode {
    background-color: #0b3d91;
    color: white;
@@ -191,7 +192,7 @@ background:  linear-gradient(#b2efe136, #097562);
 
 .dark-mode .hero {
   /* background: url('deep.jpg');*/
- background:  linear-gradient(#030c214a, #8f066b); 
+ background:  linear-gradient(#030c214a, #7d028d); 
  animation: fadeIn 1s ease-in;
 }
 
