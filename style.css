@@ -60,7 +60,14 @@ html.dark-mode body::before,
 body.dark-mode::before {
   background: rgba(0, 0, 0, 0.4);
 }
-
+html.dark-mode #menuToggle {
+  color: #ffffff; /* toggle button color */
+  background: #00000000; /* optional semi-transparent bg */
+}
+html.dark-mode #toggleMode {
+  color: #ffffff; /* toggle button color */
+  background: #00000000; /* optional semi-transparent bg */
+}
   /*================= NAVBAR FIXED ================= */
 .navbar {
   position: fixed;
@@ -98,7 +105,10 @@ body.dark-mode::before {
  color: rgb(14, 40, 97);
    font-family: 'Lucida Calligraphy', sans-serif;
    font-weight: 900;}
-
+.dark-mode .logo-name{
+  
+ color: rgb(253, 253, 253);
+}
  
 
   .btn {
@@ -1085,11 +1095,11 @@ margin-bottom: 50px;
    position: fixed;
  top: 1.5rem;
  right: 1rem;
- background: #000;
+ background: #00000000;
  padding: 0.5rem 1.2rem;
  border-radius: 25px;
  z-index: 1000;
- color: white;
+ color: #0d1b2a;
    border: none;
    display: none;
    cursor: pointer;
@@ -1104,11 +1114,11 @@ margin-bottom: 50px;
    position: fixed;
  top: 1rem;
  right: 0.1rem;
- background: #000;
+ background: #00000000;
  padding: 0.5rem 1.2rem;
  border-radius: 25px;
  z-index: 1000;
- color: white;
+ color: #0d1b2a;
    border: none;
    cursor: pointer;
    margin: 10px;
@@ -1236,11 +1246,11 @@ margin-bottom: 50px;
   position: fixed;
  top: 1.05rem;
  right: 5rem;
- background: #000;
+ background: #00000000;
  padding: 0.rem 1.01rem;
  border-radius: 25px;
  z-index: 1000;
- color: white;
+ color: #0d1b2a;
    border: none;
    display: block;
    cursor: pointer;
@@ -1285,14 +1295,17 @@ margin-bottom: 50px;
     position: absolute;
     top: 60px;
     right: 0;
-    background: #0d1b2a;
+    background: #9adff0e3;
     flex-direction: column;
     align-items: center;
     width: 100%;
     display: none; /* hidden by default */
     padding: 1rem 0;
   }
-
+.dark-mode .nav-links {
+    
+ 
+    background: #0e0125d7;}
   .nav-links.show {
     display: flex;
   }
