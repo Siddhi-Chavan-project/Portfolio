@@ -13,28 +13,27 @@
 <body>
 
   <nav class="navbar">
-      <div class="logo-name ">
-   <span >
-    Siddhi Chavan</span>
-      
-    </a>
-  </div>
-  
-    <ul class="nav-links">
-      
-      <li><a href="#about">About</a></li>
-      <li><a href="#SKILLS">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-     
-      <li><a href="#certifications">Certificates</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-<!-- Example Toggle Button -->
-<button id="toggleMode">
-  <i class="fa fa-moon"></i>
-</button>
+  <div class="logo-name">Siddhi Chavan</div>
 
+  <!-- Dark/Light Toggle -->
+  <button id="toggleMode" class="icon-btn">
+    <i class="fa fa-moon"></i>
+  </button>
+
+  <!-- Hamburger Menu -->
+  <button class="menu-toggle" id="menuToggle">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  <!-- Nav Links -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#SKILLS">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certificates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
 <header class="hero">
   <div class="container hero-content">
@@ -56,8 +55,8 @@ learn, grow, upskill and contribute effectively using my skills and knowledge.</
 
 
 
-
   <section  id="about" class="section">
+    <div class="container">
   <div class="about-container">
          
     <div class="about-img">
@@ -71,13 +70,15 @@ learn, grow, upskill and contribute effectively using my skills and knowledge.</
        I am Siddhi Chavan, an MCA student with a strong interest in Full Stack Development and Data Analysis. I enjoy creating efficient, user-friendly applications and applying analytical skills to uncover valuable insights. Alongside my academic journey, I am actively looking for opportunities where I can apply my skills, contribute to real-world projects, and grow as a professional in the tech industry.  </p>
     
     </div>
-  </div>
+  </div></div>
 </section>
+</div>
 
+ 
 <section  id="SKILLS" class="skills-section">
   <h2 class="section-title"> ♦ Technical Skills ♦</h2>
    <p class="section-subtitle">Some of My Technical Skills</p>
-
+<div class="container">
   <div class="skills-grid">
 
     <div class="skill-card">
@@ -121,11 +122,11 @@ learn, grow, upskill and contribute effectively using my skills and knowledge.</
       <img src="python.png" alt="python" class="skill-icon">
       <span>Python</span>
     </div>
-
+  </div>
   </div>
 </section>
-<section class="tools-section">
-<section class="skills-section">
+  
+<section class="tools-section">  <div class="container">
   <h2 class="section-title"> ♦ Tools ♦</h2>
    <p class="section-subtitle">Some of the tools I know</p>
 
@@ -133,7 +134,7 @@ learn, grow, upskill and contribute effectively using my skills and knowledge.</
 
     <div class="skill-card">
       <img src="vscode.png" alt="VSCode" class="skill-icon">
-      <span>VSCode</span>
+      <span>Visual Studio Code </span>
     </div>
 
     <div class="skill-card">
@@ -151,8 +152,8 @@ learn, grow, upskill and contribute effectively using my skills and knowledge.</
       <span>Github</span>
     </div>
 
-  </div>
-</section></section>
+  </div>  </div>
+</section>
 
 
 
@@ -326,6 +327,16 @@ const msg=document.getElementById("msg")
       .catch(error => console.error('Error!', error.message))
   })
 </script>
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+
+
 <script>const backToTop = document.getElementById("backToTop");
 
 // Show button on scroll
