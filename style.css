@@ -1330,6 +1330,9 @@ margin-bottom: 50px;
     display: flex;
     right: 0;
   }
+  .nav-links li{
+    margin:20px;
+  }
 
   .nav-links a {
     color: #fff;
