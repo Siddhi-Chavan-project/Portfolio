@@ -201,7 +201,7 @@ background:  linear-gradient(#b2efe136, #097562);
 
 .dark-mode .hero {
   /* background: url('deep.jpg');*/
- background:  linear-gradient(#030c214a, #8f066b); 
+ background:  linear-gradient(#030c214a, #148d87b0); 
  animation: fadeIn 1s ease-in;
 }
 
@@ -286,7 +286,7 @@ background:  linear-gradient(#b2efe136, #097562);
  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .dark-mode .about-img img {
- border: 8px solid #af0b99;}
+ border: 8px solid #148d87b0;}
 .about-content {
  max-width: 600px;
  margin-left: 40px;
