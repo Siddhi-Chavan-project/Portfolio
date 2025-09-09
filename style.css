@@ -1243,11 +1243,7 @@ margin-bottom: 50px;
 
 
 /* ================= MOBILE RESPONSIVENESS ================= */
-@media (max-width: 768px) {
-  *{
-    font-family: "Great Vibes", cursive;
-  }
-}
+
 @media (max-width: 768px) {
  
   #menuToggle {
