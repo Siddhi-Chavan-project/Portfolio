@@ -279,6 +279,7 @@ background:  linear-gradient(#b2efe136, #097562);
 .about-img img {
  width: 400px;
  height: 400px;
+ display: block;
  object-fit: cover;
  border-radius: 0%; /* or just remove this line */
  border: 8px solid #3347ff;
@@ -384,7 +385,7 @@ margin-bottom: 50px;
   text-align: center;
 }
 .dark-mode .card h3 {
-  color: #ff3366;
+  color: #03045f;
 }
 
 /* Card description */
@@ -409,7 +410,7 @@ margin-bottom: 50px;
 }
 .dark-mode .card a {
  
-  background-color: #ff007f;
+  background-color: #1ae9f0;
 }
 
 /* Responsive: 2 per row on tablets */
@@ -1276,7 +1277,9 @@ margin-bottom: 50px;
   width: 250px;
   height: 250px;
  }
-
+.about-img img{
+  display: none;
+}
  /* Close Button */
 .close-btn {
   position: absolute;
@@ -1284,7 +1287,7 @@ margin-bottom: 50px;
   right: 20px;
   font-size: 2rem;
   font-weight: bold;
-  color: #fff;
+  color: #08043a;
   cursor: pointer;
   display: block;
   transition: color 0.3s ease;
@@ -1294,7 +1297,9 @@ margin-bottom: 50px;
 .close-btn:hover {
   color: #fffa00; /* highlight on hover */
 }
-
+.dark-mode .close-btn{
+  color: #fff;
+}
 /* Buttons */
 .icon-btn, .menu-toggle {
   border: none;
@@ -1315,7 +1320,7 @@ margin-bottom: 50px;
     position: absolute;
     top: 70px;
     right: 0;
-    background: #9adff0e3;
+    background: #9ee6f8fa;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -1325,7 +1330,7 @@ margin-bottom: 50px;
 .dark-mode .nav-links {
     
  
-    background: #0e0125d7;}
+    background: #0e0125;}
   .nav-links.show {
     display: flex;
     right: 0;
