@@ -1245,6 +1245,9 @@ margin-bottom: 50px;
 /* ================= MOBILE RESPONSIVENESS ================= */
 
 @media (max-width: 768px) {
+  *{
+     font-family: 'Lucida Calligraphy', sans-serif;
+  }
   #menuToggle {
   position: fixed;
  top: 1.05rem;
