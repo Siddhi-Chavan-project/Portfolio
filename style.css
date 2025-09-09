@@ -96,13 +96,13 @@ html.dark-mode #toggleMode {
 }
 
   .navbar a {
-   color: rgb(14, 40, 97);
+   color: #08043a;
    text-decoration: none;
    margin: 0 30px;
    font-weight: 500;
   }
 .logo-name {
- color: rgb(14, 40, 97);
+ color:#08043a;
    font-family: 'Lucida Calligraphy', sans-serif;
    font-weight: 900;}
 .dark-mode .logo-name{
@@ -182,7 +182,9 @@ html.dark-mode #toggleMode {
 .dark-mode .nav-links a {
  color: #e5e8ec;
 }
-
+.close-btn{
+  display: none;
+}
 .nav-links a:hover {
  color: var(--secondary);
 }
@@ -1099,7 +1101,7 @@ margin-bottom: 50px;
  padding: 0.5rem 1.2rem;
  border-radius: 25px;
  z-index: 1000;
- color: #0d1b2a;
+ color: #08043a;
    border: none;
    display: none;
    cursor: pointer;
@@ -1118,7 +1120,7 @@ margin-bottom: 50px;
  padding: 0.5rem 1.2rem;
  border-radius: 25px;
  z-index: 1000;
- color: #0d1b2a;
+ color: #08043a;
    border: none;
    cursor: pointer;
    margin: 10px;
@@ -1250,7 +1252,7 @@ margin-bottom: 50px;
  padding: 0.rem 1.01rem;
  border-radius: 25px;
  z-index: 1000;
- color: #0d1b2a;
+ color: #08043a;
    border: none;
    display: block;
    cursor: pointer;
@@ -1285,29 +1287,52 @@ margin-bottom: 50px;
 }
 
 /* ===== Mobile View ===== */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    color: #0d1b2a;
-  }
 
+
+  @media (max-width: 768px) {
   .nav-links {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #9adff0e3;
+    position: fixed;
+    top: 0;
+    right: -250px; /* Start hidden off-screen */
+    height: 100%;
+    width: 250px; /* Sidebar width */
+    background: rgb(79 187 211); /* Dark background */
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    display: none; /* hidden by default */
-    padding: 1rem 0;
-  }
+    align-items: flex-start;
+    padding: 5rem 0.5rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  } 
+  .nav-links a {
+    list-style: none;
+    
+     /* push links below close button */
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* space between links */
+  }}
+  .close-btn {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: 21px;
+}
+
+.close-btn:hover {
+  color: #050052; /* Accent hover */
+}
+
 .dark-mode .nav-links {
     
  
-    background: #0e0125d7;}
+    background: #0e0125;}
   .nav-links.show {
-    display: flex;
+    right: 0;
   }
 
   .nav-links a {
@@ -1374,14 +1399,14 @@ margin-bottom: 50px;
 
  #toggleMode {
   top: 1rem;
-  right: 1rem;
+  right: 0rem;
   padding: 0.4rem 1rem;
  }
 
 
  #menuToggle {
   top: 1rem;
-  right: 5rem;
+  right: 3rem;
   padding: 0.4rem 1rem;
  }
  .footer {
@@ -1401,4 +1426,3 @@ margin-bottom: 50px;
   font-size: 1rem;
   padding: 12px;
  }
-}

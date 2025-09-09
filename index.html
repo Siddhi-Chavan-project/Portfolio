@@ -31,6 +31,7 @@
 
   <!-- Nav Links -->
   <ul class="nav-links" id="navLinks">
+    <span class="close-btn" id="close-btn">&times;</span>
     <li><a href="#about">About</a></li>
     <li><a href="#SKILLS">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -341,9 +342,13 @@ const msg=document.getElementById("msg")
 <script>
   const menuToggle = document.getElementById("menuToggle");
   const navLinks = document.getElementById("navLinks");
+const closeBtn = document.getElementById("close-btn");
 
   menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("show");
+    closeBtn.addEventListener("click", () => {
+  navLinks.classList.remove("show"); // close sidebar
+});
   });
 </script>
 
