@@ -1243,7 +1243,11 @@ margin-bottom: 50px;
 
 
 /* ================= MOBILE RESPONSIVENESS ================= */
-
+@media (max-width: 768px) {
+  body{
+    font-family: 'Dancing Script',cursive;
+  }
+}
 @media (max-width: 768px) {
  
   #menuToggle {
